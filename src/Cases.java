@@ -149,35 +149,41 @@ class selektion_7{
 
         if (x > y) {
 
-            if (Character.getNumericValue((x - y)) > 10) {
+            if ((x - y) > 10) {
 
-                System.out.println("difference between x and y is greater than 10" + " 1");
+                System.out.println("difference between x and y is greater than 10");
 
-            } else if(Character.getNumericValue((x - y)) < 10){
+            } else if((x - y) <= 10){
 
-                System.out.println("difference between x and y is smaller than or equal to 10" + " 2");
+                System.out.println("difference between x and y is smaller than or equal to 10");
 
             }
 
         } else if (x < y) {
 
-            if (Character.getNumericValue((y - x)) > 10) {
+            if ((y - x) > 10) {
 
-                System.out.println("difference between x and y is greater than 10" + " 3");
+                System.out.println("difference between x and y is greater than 10");
 
-            } else if (Character.getNumericValue((y - x)) < 10){
+            } else if ((y - x) <= 10){
 
-                System.out.println("difference between x and y is smaller than or equal to 10" + " 4");
-                System.out.println(y-x);
+                System.out.println("difference between x and y is smaller than or equal to 10");
+
             }
+
+        } else {
+
+            System.out.println("difference between x and y is 0");
+
         }
 
     }
 
     public static void main(String[] args) {
-        selektion7(-35,-20);
-        selektion7(10,20);
-        selektion7(10,210);
+
+        selektion7(10,10);
+        selektion7(-15,19);
+        selektion7(0,10);
     }
 
 }
