@@ -85,7 +85,7 @@ class selektion_3{
 class selektion_4{
     static void selektion4(int first, int second, int third){
 
-        if ((first > second) && > third)){
+        if ((first > second) && (first > third)){
 
             System.out.println(first);
 
@@ -105,6 +105,79 @@ class selektion_4{
 
         selektion4(7,3,5);
 
+    }
+
+}
+
+
+class selektion_6{
+
+    static void selektion6(int x, int y, int z){
+
+        if ((x < y && y < z)||(x > y && y > z)){
+
+            System.out.println(y);
+
+        } else if((y < x && x < z)||(y > x && x > z)){
+
+            System.out.println(x);
+
+        } else if((x < z && z < y)||(x > z && z > y)){
+
+            System.out.println(z);
+
+        } else {
+
+            System.out.println("multiple numbers are equal so no middle number");
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        selektion6(1,2,3);
+        selektion6(2,6,5);
+        selektion6(0,0,0);
+    }
+
+}
+
+class selektion_7{
+
+    static void selektion7(int x, int y) {
+
+        if (x > y) {
+
+            if (Character.getNumericValue((x - y)) > 10) {
+
+                System.out.println("difference between x and y is greater than 10" + " 1");
+
+            } else if(Character.getNumericValue((x - y)) < 10){
+
+                System.out.println("difference between x and y is smaller than or equal to 10" + " 2");
+
+            }
+
+        } else if (x < y) {
+
+            if (Character.getNumericValue((y - x)) > 10) {
+
+                System.out.println("difference between x and y is greater than 10" + " 3");
+
+            } else if (Character.getNumericValue((y - x)) < 10){
+
+                System.out.println("difference between x and y is smaller than or equal to 10" + " 4");
+                System.out.println(y-x);
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        selektion7(-35,-20);
+        selektion7(10,20);
+        selektion7(10,210);
     }
 
 }
