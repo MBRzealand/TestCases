@@ -1,3 +1,6 @@
+
+
+
 import jdk.swing.interop.SwingInterOpUtils;
 
 class selektion_1 {
@@ -20,6 +23,8 @@ class selektion_1 {
     }
 
 }
+
+
 
 class selektion_2{
 
@@ -50,6 +55,7 @@ class selektion_2{
         selektion2(50,50);
 
     }
+
 
 }
 
@@ -82,18 +88,18 @@ class selektion_3{
 
 }
 
-class selektion_4{
-    static void selektion4(int first, int second, int third){
+class selektion_4 {
+    static void selektion4(int first, int second, int third) {
 
-        if ((first > second) && (first > third)){
+        if ((first > second) && (first > third)) {
 
             System.out.println(first);
 
-        } else if ( (second > first) && (second > third)) {
+        } else if ((second > first) && (second > third)) {
 
             System.out.println(second);
 
-        }else if ((third > first) && (third > second)){
+        } else if ((third > first) && (third > second)) {
 
             System.out.println(third);
 
@@ -103,10 +109,41 @@ class selektion_4{
 
     public static void main(String[] args) {
 
-        selektion4(7,3,5);
+        selektion4(7, 3, 5);
 
     }
 
+}
+
+class Selektion_5 {
+
+    static void selektion5(int x) {
+
+        if (x >= 0) {
+
+            for (int i = 0; i <= x; i += 10) {
+
+                if ((i <= x) && (x < (i + 10))) {
+
+                    System.out.println("[" + i + ";" + (i + 9) + "]");
+                }
+
+            }
+
+        } else if (x < 0) {
+
+            for (int i = 0; i >= x; i -= 10) {
+
+                if ((i >= x) && (x > (i - 10))) {
+
+                    System.out.println("[" + (i - 10) + ";" + (i - 1) + "]");
+                }
+
+            }
+
+        }
+
+    }
 }
 
 
@@ -184,6 +221,27 @@ class selektion_7{
         selektion7(10,10);
         selektion7(-15,19);
         selektion7(0,10);
+    }
+
+}
+
+
+class Iteration_1{
+
+    static void iteration1(int x, int y){
+        int number = 0;
+
+        for (int i = x; i <= y; i++) {
+           number += i;
+
+        }
+
+        System.out.println(number);
+
+    }
+
+    public static void main(String[] args) {
+        iteration1(-100,100);
     }
 
 }
