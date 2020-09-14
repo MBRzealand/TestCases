@@ -2,6 +2,7 @@
 
 
 import jdk.swing.interop.SwingInterOpUtils;
+import java.lang.Math;
 
 class selektion_1 {
 
@@ -144,6 +145,11 @@ class Selektion_5 {
         }
 
     }
+
+    public static void main(String[] args) {
+        selektion5(7);
+    }
+
 }
 
 
@@ -225,6 +231,38 @@ class selektion_7{
 
 }
 
+class selektion_8{
+
+    static void selektion8(int x){
+
+        String[] liste = new String[] {"etter","toer","treer","firer","femmer","sekser"};
+
+        if (x>0 && x<=6) {
+
+            System.out.println("Det er en " + liste[x-1]);
+
+        }
+
+        else {
+
+            System.out.println("Forkert antal øjne");
+
+        }
+
+    }
+
+
+    public static void main(String[] args) {
+
+        selektion8(3);
+        selektion8(7);
+        selektion8(0);
+        selektion8(1);
+
+    }
+
+}
+
 
 class Iteration_1{
 
@@ -242,6 +280,34 @@ class Iteration_1{
 
     public static void main(String[] args) {
         iteration1(-100,100);
+    }
+
+}
+
+class iteration_2{
+
+    static void iteration2(int x, int y){
+
+        for (int i = x; i <= y; i++) {
+
+            if (i % 2 != 0){
+
+                System.out.println(i);
+
+            } else {
+
+                continue;
+
+            }
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        iteration2(10,21);
+
     }
 
 }
