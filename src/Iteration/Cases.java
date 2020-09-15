@@ -1,13 +1,14 @@
 package Iteration;
 
-import jdk.swing.interop.SwingInterOpUtils;
-import java.lang.Math;
+
+import java.util.Scanner;
+
 
 
 class Iteration_7 {
 
-    static void iteration7(int minimum, int maximum) {
-
+    static int[] iteration7(int minimum, int maximum) {
+        int[] data = {1,2};
         int lige = 0;
         int ulige = 0;
 
@@ -23,17 +24,53 @@ class Iteration_7 {
             }
 
         }
+        data[0] = lige;
+        data[1] = ulige;
 
-        System.out.println("Der er " + ulige + " ulige og " + lige + " lige tal i intervallet " + "[" + minimum + ";" + maximum + "]");
+        return data;
 
+       // System.out.println("Der er " + ulige + " ulige og " + lige + " lige tal i intervallet " + "[" + minimum + ";" + maximum + "]");
     }
 
     public static void main(String[] args) {
 
-        iteration7(2, 8);
+        Scanner input = new Scanner(System.in);
 
+        System.out.print("enter minimum: ");
 
+        int minimum = input.nextInt();
+
+        System.out.print("enter maximum: ");
+
+        int maximum = input.nextInt();
+
+        System.out.println(iteration7(minimum,maximum));
     }
+
+}
+
+
+
+class test {
+
+
+
+        public static void main(String[] args) {
+
+            // Creates an object of Scanner
+            Scanner input = new Scanner(System.in);
+
+            System.out.print("Enter your name: ");
+
+            // Takes input from the keyboard
+            String name = input.nextLine();
+
+            // Prints name
+            System.out.println("My name is " + name);
+
+            // Closes the scanner
+            input.close();
+        }
 
 }
 
