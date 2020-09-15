@@ -1,5 +1,6 @@
 package Prog_Kap2;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 class Opgave2_5 {
@@ -21,7 +22,9 @@ class Opgave2_5 {
 
         input.close();
 
-        String output = ("gratuity: " + gratuityConv + "$" + "\n" + "Total: " + (subtotalConv + gratuityConv) + "$");
+        DecimalFormat Round = new DecimalFormat("###.##");
+
+        String output = ("gratuity: " + Round.format(gratuityConv) + "$" + "\n" + "Total: " + Round.format(subtotalConv + gratuityConv) + "$");
 
         return output;
 

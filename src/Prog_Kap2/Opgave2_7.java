@@ -6,7 +6,7 @@ class Opgave2_7 {
 
     static String simplifyMinutes() {
         Scanner input = new Scanner(System.in);
-        System.out.print("enter minutes: ");
+        System.out.print("Enter minutes: ");
 
         int minutes = input.nextInt();
         int years = ((minutes / 60) / 24) / 365;
@@ -33,3 +33,4 @@ class Opgave2_7 {
     }
 
 }
+

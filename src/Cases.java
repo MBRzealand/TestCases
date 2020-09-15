@@ -1,8 +1,9 @@
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
-class Opgave2_8 {
 
+class placeholder{
 
 
 }
