@@ -1,6 +1,7 @@
 package Iteration;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -29,7 +30,6 @@ class Iteration_7 {
 
         return data;
 
-       // System.out.println("Der er " + ulige + " ulige og " + lige + " lige tal i intervallet " + "[" + minimum + ";" + maximum + "]");
     }
 
     public static void main(String[] args) {
@@ -44,7 +44,8 @@ class Iteration_7 {
 
         int maximum = input.nextInt();
 
-        System.out.println(iteration7(minimum,maximum));
+
+        System.out.println("Der er " + iteration7(minimum,maximum)[1] + " ulige og " + iteration7(minimum,maximum)[0] + " lige tal i intervallet " + "[" + minimum + ";" + maximum + "]");
     }
 
 }
