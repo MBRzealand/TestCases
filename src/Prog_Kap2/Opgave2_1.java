@@ -11,9 +11,8 @@ class Opgave2_1 {
         double miles = input.nextDouble();
         input.close();
 
-        String output = (miles + " Miles equals " + (miles * 1.6) + " Kilometers");
 
-        return output;
+        return (miles + " Miles equals " + (miles * 1.6) + " Kilometers");
 
     }
 

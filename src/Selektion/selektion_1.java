@@ -15,7 +15,7 @@ class selektion_1 {
 
     public static void main(String[] args) {
         selektion1(5, 8, 3);
-        System.out.println("");
+        System.out.println();
         selektion1(-2, 1, 9);
     }
 

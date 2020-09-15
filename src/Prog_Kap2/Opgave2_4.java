@@ -11,9 +11,8 @@ class Opgave2_4 {
         double ping = sqMeters * 0.3025;
         input.close();
 
-        String output = (sqMeters + " square meters equals: " + ping + " ping");
 
-        return output;
+        return (sqMeters + " square meters equals: " + ping + " ping");
 
 
     }

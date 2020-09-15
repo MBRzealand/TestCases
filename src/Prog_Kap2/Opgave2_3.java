@@ -9,10 +9,9 @@ class Opgave2_3 {
         System.out.print("enter meters: ");
         double meters = input.nextDouble();
         double feet = meters * 3.2786;
+        
 
-        String output = (meters + " meter equals: " + feet + " feet");
-
-        return output;
+        return (meters + " meter equals: " + feet + " feet");
 
     }
 

@@ -15,9 +15,8 @@ class Opgave2_2 {
         double volume = area * length;
         input.close();
 
-        String output = ("the area is: " + area + "\n" + "the volume of the Triangular prism is: " + volume);
 
-        return output;
+        return ("the area is: " + area + "\n" + "the volume of the Triangular prism is: " + volume);
 
     }
 
